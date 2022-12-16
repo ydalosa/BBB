@@ -40,7 +40,7 @@ public class ShowDetailActivity extends AppCompatActivity {
                 .into(picFood);
 
         titleTxt.setText(object.getTitle());
-        feeTxt.setText("$" + object.getFee());
+        feeTxt.setText( object.getFee() + "euro");
         descriptionTxt.setText(object.getDescription());
         numberOrderTxt.setText(String.valueOf(numberOrder));
 
@@ -55,7 +55,7 @@ public class ShowDetailActivity extends AppCompatActivity {
         minusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (numberOrder > 1) {
+                if (numberOrder < 2 ) {
                     numberOrder = numberOrder - 1;
                 }
                 numberOrderTxt.setText(String.valueOf(numberOrder));

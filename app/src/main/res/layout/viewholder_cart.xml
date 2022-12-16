@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
@@ -22,7 +23,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pop_1" />
+        app:srcCompat="@drawable/profile" />
 
     <TextView
         android:id="@+id/titleTxt"
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:text="title"
+        android:text="Docteur Intelligent"
         android:textColor="#373b54"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -44,7 +45,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/picCart"
         app:layout_constraintStart_toStartOf="@+id/titleTxt"
-        app:srcCompat="@drawable/minus" />
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
 
     <TextView
         android:id="@+id/numberItemTxt"
@@ -67,12 +68,12 @@
         app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
         app:layout_constraintStart_toEndOf="@+id/numberItemTxt"
         app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/ic_baseline_add_24" />
 
     <TextView
         android:id="@+id/feeEachItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="2dp"
+        android:layout_height="18dp"
         android:layout_marginEnd="16dp"
         android:text="0"
         android:textColor="#373b54"
@@ -87,7 +88,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
-        android:text="$"
         android:textColor="#ff3d00"
         app:layout_constraintBottom_toBottomOf="@+id/feeEachItem"
         app:layout_constraintEnd_toStartOf="@+id/feeEachItem"
@@ -110,7 +110,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
-        android:text="$"
         android:textColor="#ff3d00"
         app:layout_constraintBottom_toBottomOf="@+id/totalEachItem"
         app:layout_constraintEnd_toStartOf="@+id/totalEachItem"

@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
-                android:text="title"
+                android:text="Docteur Intelligent"
                 android:textAlignment="center"
                 android:textColor="#373b54"
                 android:textSize="24sp"
@@ -30,16 +30,16 @@
                 android:id="@+id/priceTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$"
+                android:text="2 Rue Acacias Paris 7è"
                 android:textAlignment="center"
-                android:textColor="#ff5e00"
+                android:textColor="#034998"
                 android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/picfood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/pizza" />
+                app:srcCompat="@drawable/profile" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                     android:id="@+id/minusBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/minus" />
+                    app:srcCompat="@drawable/ic_baseline_remove_24" />
 
                 <TextView
                     android:id="@+id/numberOrderTxt"
@@ -69,7 +69,7 @@
                     android:id="@+id/plusBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/plus" />
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
 
 
             </LinearLayout>
@@ -92,13 +92,13 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_margin="16dp"
-        android:background="@drawable/orange_button"
+        android:background="@drawable/bluerond"
+        android:elevation="3dp"
         android:gravity="center"
-        android:text="Add to Cart"
+        android:text="Choisissez ce médecin"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
-        android:elevation="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

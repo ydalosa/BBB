@@ -57,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> category = new ArrayList<>();
-        category.add((new CategoryDomain("Pizza", "cat_1")));
-        category.add((new CategoryDomain("Burger", "cat_2")));
-        category.add((new CategoryDomain("Hotdog", "cat_3")));
-        category.add((new CategoryDomain("Drink", "cat_4")));
-        category.add((new CategoryDomain("Dount", "cat_5")));
+        category.add((new CategoryDomain("Généraliste", "doct7")));
+        category.add((new CategoryDomain("Chirurgien", "doct8")));
+        category.add((new CategoryDomain("Spécialité médicale", "doct9")));
+        category.add((new CategoryDomain("Dentisterie", "doct10")));
+        category.add((new CategoryDomain("ORL", "doct11")));
 
         adapter = new CatregoryAdaptor(category);
         recyclerViewCategoryList.setAdapter(adapter);
@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Pepperoni pizza", "pop_1", "slices pepperoni,mozzarella cheese,fresh oregano,ground black pepper,pizza sauce", 9.76));
-        foodList.add(new FoodDomain("Cheese Burger", "pop_2", "beef, Gouda cheese, Special Sauce,Lettuce,tomato", 8.79));
-        foodList.add(new FoodDomain("Vegetable pizza", "pop_3", "olive oil,Vegetable oil,pitted kalamata,cherry tomatoes,fresh oregano,basil", 8.5));
+        foodList.add(new FoodDomain("Docteur Adrien", "doct4", "Paris 7è, 1 rue Acacia", 9.76));
+        foodList.add(new FoodDomain("Docteur Valérie", "doct5", "Paris 19è, 5 rue Charles de Gaulle", 8.79));
+        foodList.add(new FoodDomain("Docteur Amine", "doct6", "Paris 12è, 3 rue Saint Germain", 8.5));
 
         adapter2 = new PopluarAdaptor(foodList);
         RecyclerViewPopularList.setAdapter(adapter2);

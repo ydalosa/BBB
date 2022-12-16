@@ -37,27 +37,27 @@ public class CatregoryAdaptor extends RecyclerView.Adapter<CatregoryAdaptor.View
         String picUrl = "";
         switch (position) {
             case 0: {
-                picUrl = "cat_1";
+                picUrl = "doct11";
                 holder.mainLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background1));
                 break;
             }
             case 1: {
-                picUrl = "cat_2";
+                picUrl = "doct10";
                 holder.mainLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background2));
                 break;
             }
             case 2: {
-                picUrl = "cat_3";
+                picUrl = "doct9";
                 holder.mainLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background3));
                 break;
             }
             case 3: {
-                picUrl = "cat_4";
+                picUrl = "doct8";
                 holder.mainLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background4));
                 break;
             }
             case 4: {
-                picUrl = "cat_5";
+                picUrl = "doct7";
                 holder.mainLayout.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background5));
                 break;
             }
